@@ -17,8 +17,8 @@ OUTPUT_FORMAT = '.tif'
 show_image = True
 random_source_coords = False
 horizontal_striping = False
-MIN_STRIPES = 90
-MAX_STRIPES = 200
+MIN_STRIPES = 170
+MAX_STRIPES = 400
 no_of_stripes = random.randint(MIN_STRIPES,MAX_STRIPES)
 
 if not os.path.exists(output_dir):
