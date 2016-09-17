@@ -1,3 +1,5 @@
+# splices\stipes all the images in the input directory together
+
 import PIL
 from PIL import Image
 import os
@@ -58,7 +60,7 @@ if horizontal_striping:
 else:
     split = range(0, int(w), int(int(w) / int(no_of_stripes)))
     for coord in split:
-        stripe_coords = (coord, 0, int(coord + h / no_of_stripes), w)
+        stripe_coords = (coord, 0, int(coord + w / no_of_stripes), h)
         coords_list.append(stripe_coords)
 
 stripe_image = Image.new('RGB',largest_dims)
