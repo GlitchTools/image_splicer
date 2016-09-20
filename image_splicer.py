@@ -1,3 +1,5 @@
+# Written by stephen salmon
+# email stephensalmon.mayo@gmail.com
 # splices\stipes all the images in the input directory together
 
 import PIL
@@ -16,9 +18,9 @@ image_formats = ['.jpg', '.jpeg', '.png', '.tif', '.bmp']
 OUTPUT_FORMAT = '.tif'
 show_image = True
 random_source_coords = False
-horizontal_striping = False
-MIN_STRIPES = 170
-MAX_STRIPES = 400
+horizontal_striping = True
+MIN_STRIPES = 40
+MAX_STRIPES = 70
 no_of_stripes = random.randint(MIN_STRIPES,MAX_STRIPES)
 
 if not os.path.exists(output_dir):
