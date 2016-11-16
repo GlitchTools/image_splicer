@@ -1,8 +1,10 @@
 # image_splicer
 
-Image Splicer Script written in Python.
-Just throw as many images as you want into your input directory of choice and the script
-will resize all to largest image's dimenstions splicing them together to form one image.
+Image Splicer script written in Python.
+Script will read all images from the input directory, resize them to largest images dimensions
+and splicing them together to form one image. The number of slices is a random generated number
+between MIN_SLICES and MAX_SLICES values.
+Splicing Orientation can be set to either vertical or horizontal.
 You have the option of horizonal or vertical slicing and picking random slices or sequenced slicing.
 
 
@@ -14,12 +16,12 @@ optional arguments:
   -h, --help            show this help message and exit
   -i INPUT_DIR, --input INPUT_DIR
                         input dir of source images
-  -mn MIN_STRIPES, --minstripes MIN_STRIPES
-                        Minimum Stripes
-  -mx MAX_STRIPES, --maxstripes MAX_STRIPES
-                        Max Stripes
+  -mn MIN_SLICES, --minslices MIN_SLICES
+                        Minimum slices
+  -mx MAX_SLICES, --maxslices MAX_SLICES
+                        Max slices
   -r RANDOM_SPLICING, --random RANDOM_SPLICING
                         Random splicing
-  -o {verticle,horizontal}, --orientation {verticle,horizontal}
+  -o {vertical,horizontal}, --orientation {vertical,horizontal}
                         Splice Orientation
 ```
